@@ -11,3 +11,10 @@ for(let i = 0;i<5;i++){
     console.log(i);
     console.log(i);
 }
+
+console.log("task 1");
+
+setTimeout(() => {
+    console.log("Task 2")
+}, 5000);
+console.log("Task 3")
