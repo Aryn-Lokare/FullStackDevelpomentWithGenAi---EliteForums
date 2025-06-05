@@ -24,7 +24,7 @@ const prompt = require('prompt-sync')();
 const name = prompt("What is your Name ?");
 console.log("Hello, "+ name + "!");
 
-//Function without Parameters 
+// //Function without Parameters 
 function printZeroToFive(){
     for(let i = 0 ; i <= 5 ; i++){
         console.log(i);
@@ -40,7 +40,7 @@ function addingTwoNumbers(a,b,c){
     c = a + b;
     console.log("Addition of 2 numbers " + c);
 }
-addingTwoNumbers();
+
 
 setTimeout(() => {
     return printZeroToFive();
@@ -54,3 +54,19 @@ const addition = function(a,b,c){
     console.log("Addition of 2 numbers " + c);
 }
 addition();
+
+// CallBack Function 
+function addingTwoNumbers(a,b,c , printZeroToFive){
+    a = 10;
+    b = 11;
+    c = a + b;
+    console.log("Addition of 2 numbers " + c);
+}
+addingTwoNumbers(printZeroToFive);
+
+// Arrow Function
+
+const square = (x)=>{
+    return x * x;
+}
+console.log(square(25));
