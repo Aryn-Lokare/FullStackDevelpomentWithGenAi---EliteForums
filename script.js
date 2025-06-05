@@ -18,3 +18,7 @@ setTimeout(() => {
     console.log("Task 2")
 }, 5000);
 console.log("Task 3")
+
+const prompt = require('prompt-sync')();
+const name = prompt("What is your Name ?");
+console.log("Hello, "+ name + "!");
