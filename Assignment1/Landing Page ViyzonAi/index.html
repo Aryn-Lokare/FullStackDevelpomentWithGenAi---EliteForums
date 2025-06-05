@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viyzon Ai Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url("https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8632.jpg?semt=ais_hybrid&w=740");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            color: white;
+
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            padding: 30px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            gap: 120px;
+        }
+
+        .nav-auth {
+            display: flex;
+            gap: 50px;
+        }
+
+        .nav-auth a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 6px 12px;
+            border: 1px solid white;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .nav-auth a:hover {
+            background-color: white;
+            color: purple;
+        }
+
+        /* Center nav links */
+        .navbar>div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .navbar .logo {
+            text-align: left;
+        }
+
+        .navbar .nav-auth {
+            text-align: right;
+            margin-left: 440px;
+        }
+
+        .hero {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            max-width: 800px;
+            line-height: 1;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .cta-button {
+            background-color: #7f3fff;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: white;
+            color: #7f3fff;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .services-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background-color: #7f3fff;
+            padding: 30px 20px;
+            border-radius: 12px;
+            transition: transform 0.3s, background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            background-color: #9f5bff;
+        }
+
+        .service-card h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .testimonial-card {
+            background-color: #7f3fff;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .testimonial-text {
+            flex: 1;
+        }
+
+        .testimonial-text p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .testimonial-text h4 {
+            margin: 0;
+            font-weight: normal;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .testimonial-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-card {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .testimonial-image {
+                margin-bottom: 20px;
+            }
+        }
+
+        footer {
+            background-color: #7f3fff;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            font-size: 33px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            footer {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <nav class="navbar">
+            <div class="logo">Viyzon Ai</div>
+
+            <div class="nav-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Pricing</a>
+                <a href="#">Sales</a>
+
+
+            </div>
+
+            <div class="nav-auth">
+                <a href="#">Login</a>
+                <a href="#">Signup</a>
+            </div>
+        </nav>
+    </center>
+    <div class="hero">
+        <h1>We build AI solutions that thrive businesses</h1>
+        <a href="#" class="cta-button">Book a Demo Meeting</a>
+    </div>
+    <section class="services-section">
+        <h2>Our AI Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>AI Automation</h3>
+            </div>
+            <div class="service-card">
+                <h3>AI Agents</h3>
+            </div>
+            <div class="service-card">
+                <h3>AI Researchers</h3>
+            </div>
+            <div class="service-card">
+                <h3>AI Web Apps</h3>
+            </div>
+        </div>
+    </section>
+    <center><h1 style="color: #fff;font-size: 50px;">Our Testimonials </h1></center>
+    <div class="testimonials-container">
+
+        <div class="testimonial-card">
+            <div class="testimonial-text">
+                <p>"Viyzon AI delivered a custom AI agent that boosted our customer response time dramatically. Their
+                    work is top-tier."</p>
+                <h4>— Mark Evans, CTO of QuickServe</h4>
+            </div>
+            <img class="testimonial-image"
+                src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L3BmLWljb240LWppcjIwNjItcG9yLWwtam9iNzg4LnBuZw.png"
+                alt="Mark Evans">
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-text">
+                <p>"Their AI research insights were game-changing for our product roadmap. We gained clarity and
+                    direction."</p>
+                <h4>— Priya Mehta, Product Lead at Innovexa</h4>
+            </div>
+            <img class="testimonial-image"
+                src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L3BmLWljb240LWppcjIwNjItcG9yLWwtam9iNzg4LnBuZw.png"
+                alt="Priya Mehta">
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-text">
+                <p>"The AI-powered web app Viyzon built for us is fast, intelligent, and user-friendly. Their attention
+                    to detail is unmatched."</p>
+                <h4>— Luca Bianchi, Founder of BianchiTech</h4>
+            </div>
+            <img class="testimonial-image"
+                src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L3BmLWljb240LWppcjIwNjItcG9yLWwtam9iNzg4LnBuZw.png"
+                alt="Luca Bianchi">
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-text">
+                <p>"Working with Viyzon was a breeze. Their automation system reduced manual tasks by 70%, saving us
+                    both time and money."</p>
+                <h4>— Aisha Khan, COO of EcoLine</h4>
+            </div>
+            <img class="testimonial-image"
+                src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L3BmLWljb240LWppcjIwNjItcG9yLWwtam9iNzg4LnBuZw.png"
+                alt="Aisha Khan">
+        </div>
+
+    </div>
+    <footer>
+       <center> <h1>Viyzon Ai</h1></center>
+       <center><p>Contact us on <a href="https://google.com">Viyzon Ai</a></p></center>
+    </footer>
+    <script>
+        alert("Jaldi Yaha se hatto ")
+    </script>
+</body>
+
+</html>
