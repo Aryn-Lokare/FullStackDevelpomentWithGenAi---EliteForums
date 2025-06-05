@@ -42,3 +42,15 @@ function addingTwoNumbers(a,b,c){
 }
 addingTwoNumbers();
 
+setTimeout(() => {
+    return printZeroToFive();
+}, 5000);
+
+// Function with Expressions 
+const addition = function(a,b,c){
+    a = 10;
+    b = 12;
+    c = a + b;
+    console.log("Addition of 2 numbers " + c);
+}
+addition();
