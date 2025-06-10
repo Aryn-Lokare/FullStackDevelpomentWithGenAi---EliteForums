@@ -42,9 +42,6 @@ function addingTwoNumbers(a,b,c){
 }
 
 
-setTimeout(() => {
-    return printZeroToFive();
-}, 5000);
 
 // Function with Expressions 
 const addition = function(a,b,c){
@@ -70,3 +67,5 @@ const square = (x)=>{
     return x * x;
 }
 console.log(square(25));
+
+
