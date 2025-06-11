@@ -17,10 +17,10 @@ export default function page(){
   function Submit(){
     console.log("Submittted");
   }
-  const[count,setCount] = useState(1);
+  const[count,setCount] = useState("This is String");
 
   function submit(){
-        setCount(count+1);
+        setCount("i changed the string");
         console.log("button pressed");
     }
 
